@@ -14,6 +14,14 @@ ul {
   --secondary-color: #2196f3;
 }
 
+img {
+  display: block;
+}
+
+address {
+  font: inherit;
+}
+
 a {
   text-decoration: none;
 }
@@ -33,7 +41,7 @@ body {
 /* header */
 
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -70,6 +78,13 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #212121;
+}
+
+.link-backlight {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--secondary-color);
 }
 
 .site-nav {
@@ -136,19 +151,22 @@ body {
   margin-bottom: 30px;
 }
 
+pre {
+  font: inherit;
+}
+
 /* main */
 
-.portfolio-main
-{
-padding-top: 94px;
-padding-bottom: 94px;
+.portfolio-main {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .button {
   font-family: "Roboto", "sans-serif";
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.6;
   width: 216px;
   height: 50px;
   font-family: inherit;
@@ -159,19 +177,21 @@ padding-bottom: 94px;
   display: inline-block;
   text-align: center;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .button-portfolio {
   font-family: "Roboto", "sans-serif";
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.6;
   text-align: center;
   color: #212121;
   background: #f5f4fa;
   padding: 6px 22px;
   border: transparent;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-portfolio:hover,
@@ -188,10 +208,14 @@ padding-bottom: 94px;
 
 .border-photo {
   margin-bottom: 30px;
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: #ffffff;
+}
 
- 
+.border-text {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .list-buttons {
@@ -202,14 +226,17 @@ padding-bottom: 94px;
 }
 
 .list-buttons li:not(:last-child) {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .list-one {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  padding-left: 15px;
+}
+
+.section {
+  padding-bottom: 94px;
 }
 
 .section-title-invisible {
@@ -232,11 +259,11 @@ padding-bottom: 94px;
 }
 
 .list-posters {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .list-people {
@@ -244,7 +271,6 @@ padding-bottom: 94px;
   padding: 0;
   justify-content: space-between;
   list-style: none;
-  padding-bottom: 94px;
 }
 
 .section-minititle {
@@ -259,8 +285,21 @@ padding-bottom: 94px;
 
 .section-minititle-phar {
   margin: 0;
-  width: 270px;
-  height: 72px;
+  margin-right: 30px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #757575;
+}
+
+.section-minititle-phar-last {
+  margin-right: 0px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #757575;
 }
 
 .works {
@@ -273,8 +312,7 @@ padding-bottom: 94px;
 }
 
 .team {
-  padding-bottom: 50px;
-  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .name {
@@ -294,15 +332,16 @@ padding-bottom: 94px;
 }
 
 .card {
-  background-color: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-
 .section-team {
   background-color: #f5f4fa;
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .title-portfolio {
@@ -310,9 +349,7 @@ padding-bottom: 94px;
   font-size: 18px;
   line-height: 1.2;
   color: #212121;
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-left: 24px;
 }
 
 .description {
@@ -320,8 +357,6 @@ padding-bottom: 94px;
   font-size: 16px;
   line-height: 30px;
   color: #757575;
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
 
 /* footer */
@@ -379,7 +414,6 @@ padding-bottom: 94px;
   font-size: 14px;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
 }
 
 /* Блоки */
