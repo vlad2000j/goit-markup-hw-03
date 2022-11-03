@@ -157,6 +157,10 @@ pre {
 
 /* main */
 
+.visually-hidden {
+  display: none;
+}
+
 .portfolio-main {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -307,7 +311,7 @@ pre {
 }
 
 .first {
-  padding-top: 67px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
